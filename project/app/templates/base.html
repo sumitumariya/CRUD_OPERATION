@@ -1,0 +1,111 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body><input type="checkbox" id="click">
+   
+  
+  {% if context.Nm %}
+   
+    <nav class="navbar">
+        <div class="navdiv">
+            <div class="logo"><a href="#" style="color: wheat;">Viyana</a> </div>
+
+            <ul>
+                <li><i class="fa-solid fa-user i" style="color: wheat;"></i><a style="margin:5px ;">{{context.Nm}}</a></li>
+                <li><a href="{%url 'home'%}">Logout</a></li>
+                
+            </ul>
+            <label for="click">
+                <i class="fa-solid fa-bars" style="color: wheat;"></i>
+               
+            </label>
+        </div>
+    </nav>
+
+    {% else %}
+    <nav class="navbar">
+      <div class="navdiv">
+          <div class="logo"><a href="#">Viyana</a> </div>
+
+          <ul>
+              <li><a href="{%url 'home'%}">Home</a></li>
+              <li><a href="{%url 'about'%}">About</a></li>
+              <li><a href="{%url 'contact'%}">Contact</a></li>
+              <li><a href="{%url 'expert' %}">Experts</a></li>
+
+              <li><a href="{%url 'register'%}">SignUp</a></li>
+              <li><a href="{%url 'login'%}">Login</a></li>
+
+
+          </ul>
+          <label for="click">
+            <i class="fa-solid fa-bars" style="color: wheat;"></i>
+        </label>
+      </div>
+  </nav>
+
+     {% endif %}
+     
+    {% block content %}
+
+
+    {% endblock %}
+
+
+    <footer>
+        
+ 
+      <div class="foot-panel2">
+          <ul>
+              <p> Get to Know Us </p>
+              <p>Career</p>
+              <p>Blog</p>
+              <p>About course</p>
+              <p>Investor Relations</p>
+              <p> Devices</p>
+              
+          </ul>
+          
+
+          <ul>
+                  <p>Make Money with Us </p>
+                  
+                  <p> Our Business</p>
+                  <p> Become an Affiliate</p>
+                  <p>Advertise our Products</p>
+                  <p>Self-Publish with Us</p>
+                  <p>Host an  Hub</p>
+              </ul>
+         
+              
+         
+          
+          
+               <ul>
+                      <p>Let Us Help You</p> 
+                      <p>Your Account </p>
+                      <p>Manage Your Content and Devices </p>
+                      <p> Assistant </p>
+                      <p>Help </p>
+                     
+                  </ul>
+
+                 </div>
+                 <!-- <div style="background-color: #222222; color: wheat; text-align: center;"><h5>© 2024, project.com, Inc. or its affiliates</h5></div> -->
+
+        
+        
+        
+     
+ </footer>
+</body>
+</html>

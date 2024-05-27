@@ -1,0 +1,134 @@
+*{margin: 0;padding: 0;
+    text-decoration: none;
+}
+body{background-color: #C1E0D1;}
+.navbar{background-color: #222222;
+   padding-right: 15px;
+   padding-left: 15px; 
+   position: sticky; top: 0; border-bottom: 1px solid #222222;
+}
+.navdiv{display: flex;align-items: center;justify-content: space-between;height: 80px;}
+
+.logo a{
+font-size: 35px;font-weight: 600;color: wheat;
+}
+
+li{list-style: none;display: inline-block;
+}
+
+li a{
+font-size: 18px; font-weight: bold;margin-right: 25px;color: #F3F5F4;
+}
+
+li a:hover{color: #C1E0D1;text-decoration: underline wheat;}
+
+/* button{
+background-color: black;
+margin-left: 20px;
+padding: 10px;width: 100px;color: wheat;
+} */
+
+button a{font-weight: bold;font-size: 15px;}
+
+ .footer{
+    background-color: dodgerblue;
+    height: 80px;font-size: 15px;
+    display: flex;align-items: center;
+    justify-content: center;
+    
+ }
+
+
+
+/* ..............foot */
+
+.foot-panel1{
+   background-color: black;
+   color: whitesmoke;
+   height: 50px;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: small;
+   flex-wrap: wrap;
+   border-top: 2px solid maroon;
+}
+footer{
+   
+   flex-wrap: wrap;display: flex;
+}
+.foot-panel2{background-color: black;
+   display: flex;
+   width: 100%;
+   border-top:2px solid #222222;
+   border-bottom:2px solid #222222;
+   justify-content: space-evenly;
+   flex-wrap: wrap;
+}
+
+ul p{
+   color: whitesmoke;
+   margin: 10px;
+}
+
+
+
+
+
+.pages{font-size: small;
+    
+    padding-top: 25px;
+
+}
+/* ........
+ */
+ #click{display: none;}
+.navbar label{display: none;}
+#click:checked~.navbar ul {display: block;}
+@media screen and (max-width:950px) {
+   
+   .navbar label{display: block;
+      font-size: 40px;
+      padding-right: 50px;
+      color: wheat;
+   }
+   .navbar ul{
+        margin-top: 248px;
+       
+       position: absolute;
+       top: -170px;
+       right: 0%;
+       width: 100%;
+       background-color:#222222; color: wheat;
+       display: none;
+       padding: 20px;
+   }
+   .navbar ul li{
+       display: block;
+       margin-left: 50px;
+       padding: 25px;
+       font-size: 20px;
+      
+   }}
+  
+/*    
+
+
+
+}
+ 
+@media screen and (min-width:350px){
+   .cardio h1 {
+       
+       font-size: 35px;
+     
+   }
+   .Yoga h2{
+       margin-top: 155px;
+   }
+   img {
+      width: 300px;
+      height: 500px;
+  }
+} */

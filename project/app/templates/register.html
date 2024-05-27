@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/signup.css/' %}">
+    
+    
+</head>
+<body>
+
+    
+    <center><h1 style="color: rgb(24, 23, 22);"> {{msg}}</h1></center>
+    <br> <br>
+   
+   
+    <form action="{% url 'registerdata' %}" method="post">
+        {% csrf_token %} 
+        <h1>Sign-Up</h1>
+        <input type="text" name="Name" placeholder=" Name:" >  
+        <input type="email" name="Email" placeholder="Email:"> 
+        <input type="text" name="Contact" placeholder="  Contact: " > 
+        <input type="password" name="Password" placeholder="Password:" > 
+        <input type="password" name="Cpassword" placeholder="CPassword:">
+        <button type="submit">Submit</button>
+        <p>Already have an Account? <a href="{% url 'login' %}"> Login Now!</a></p>
+    </form>
+  
+
+
+</body>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+</html>
+{% endblock%}

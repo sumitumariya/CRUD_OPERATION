@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/expert.css' %}">
+</head>
+<body> 
+    
+    <div class="h1"><h1>EXPERT<span>TRAINERS</span></h1></div>
+    <br>
+    <div class="trainersclass">  
+          <div class="img1"><img src="{% static 'image/s1.jpg'%}" alt=""><br>
+            <span>
+                Strength Trainer
+            </span> 
+            <h4>
+                Bret D. Bowers
+            </h4>
+                Bitters cliche tattooed 8-bit distillery mustache. <br>Keytar succulents gluten-free vegan church-key <br> pour-over seitan flannel.
+          </div>
+          <div class="img2">
+            <video width="500px" height="500px"  controls>
+                <source src="{% static 'image/WhatsApp Video 2024-05-18 at 01.09.24_57964b23.mp4'%}">
+              </video>
+          </div>
+            
+          <div class="img3"><img src="{% static 'image/e2.jpg'%}" alt=""><br>
+            <span>
+                Power Trainer
+            </span> 
+            <h4>
+                Paul D. Newman
+            </h4>
+                Bitters cliche tattooed 8-bit distillery mustache. <br>Keytar succulents gluten-free vegan church-key <br> pour-over seitan flannel.
+          </div>
+    </div>
+   
+
+</body>
+</html>
+{% endblock%}

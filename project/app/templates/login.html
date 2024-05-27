@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content%}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/login.css/' %}">
+
+    
+</head>
+
+<body>
+
+    <center><h1 style="background-color: beige;color: #000;" > {{key}}</h1>
+    
+    <form action="{% url 'logindata' %} " method="post">
+        {% csrf_token %}
+        <h1>Login Form</h1>
+        <input type="email" name="email" placeholder="Email" value="{{Em}}">
+        <input type="password" name="password" placeholder="Password">
+        
+        <button class="bsub" type="submit" >login</button>
+        <p>Don't have an Account? <a href="{% url 'register' %}"> Register Now!</a></p>
+    </form>
+     
+</center>
+</body>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+</html>
+   {% endblock%}
